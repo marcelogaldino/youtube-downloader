@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
     "build": "rimraf ./build && npm run tsc",
-    "start": "npm run build && node build/index.js"
+    "start": "npm run build && node build/index.js",
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "cors": "^2.8.5",
