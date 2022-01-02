@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
-    "build": "rimraf ./build && tsc",
+    "build": "rimraf ./build && npm run tsc",
     "start": "yarn build && node build/index.js"
   },
   "dependencies": {
